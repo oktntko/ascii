@@ -1,0 +1,42 @@
+{
+  "name": "ascii",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint": "oxlint --type-aware --type-check",
+    "spell-check": "cspell .",
+    "format": "oxfmt"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.2.1",
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "@cspell/eslint-plugin": "^9.7.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@tsconfig/node24": "^24.0.4",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/node": "^24.10.15",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vitejs/plugin-vue-jsx": "^5.1.4",
+    "@vue/tsconfig": "^0.8.1",
+    "cspell": "^9.7.0",
+    "npm-run-all2": "^8.0.4",
+    "oxfmt": "^0.35.0",
+    "oxlint": "~1.50.0",
+    "oxlint-tsgolint": "^0.15.0",
+    "typescript": "~5.9.3",
+    "vite": "beta",
+    "vite-plugin-vue-devtools": "^8.0.6",
+    "vue-tsc": "^3.2.5"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
