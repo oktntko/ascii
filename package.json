@@ -1,11 +1,14 @@
 {
   "name": "ascii",
   "version": "0.0.0",
-  "private": true,
+  "keywords": [],
+  "license": "ISC",
+  "author": "oktntko@gmail.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:pages": "MODE='pages' vite build --mode pages",
     "preview": "vite preview",
     "tauri": "tauri",
     "build-only": "vite build",
@@ -41,5 +44,6 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.1"
 }
